@@ -44,7 +44,7 @@ def main():
     analyzer = LogAnalyzer("app.log")
     lines = analyzer.read_logs()
 
-    if not lines:
+    if n    ines:
         print("No logs to analyze.")
         return
 
