@@ -1,0 +1,22 @@
+#### To access the AWS account via CLI on windows
+1. Go to URL: https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html
+2. Execute command on CMD - msiexec.exe /i https://awscli.amazonaws.com/AWSCLIV2.msi
+3. After Successfully installed then to validate run "aws --version" command
+4. Now from AWS portal get the access key of user from user.
+5. Now move to cmd and run "aws configure" command, then it will ask access key and secreat key.
+6. Now run "aws s3 ls" command on terminal. (It will give the list of all bucket created for this user.)
+
+
+### In python we have Boto3 library which we use to communicate with aws.
+URL: https://boto3.amazonaws.com/v1/documentation/api/latest/index.html
+
+
+##### Some useful command for aws CLI #####
+1. # Check who you're currently logged in as
+aws sts get-caller-identity
+
+2. # List all configured profiles
+aws configure list-profiles
+
+3. # See what's in default profile
+aws configure list
